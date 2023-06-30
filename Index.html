@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style link  -->
+    <link rel="stylesheet" href="./Style.css" />
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BMI calculator App</title>
+  </head>
+  <body>
+    <nav class="nav-section"><a href="./Index.html">BMI Calculator App</a></nav>
+    <main>
+      <section class="container gen-section">
+        <button class="male">
+          <img src="./Fonts/Male.svg" alt="" /><span class="male-title">Male</span>
+        </button>
+        <button class="female">
+          <img src="./Fonts/Female.svg" alt="" /><span class="female-title">Female</span>
+        </button>
+      </section>
+      <section class="container height-section">
+        <span class="height-counter">0</span>
+        <input type="range" class="height-input" max="200" min="10" />
+      </section>
+      <section class="container weight-section">
+        <div class="weight">
+          <h3 class="weight-title">Weight</h3>
+          <span class="weight-counter">0</span>
+          <div class="weight-cal">
+            <button class="weight-minus">
+              <img src="./Fonts/minus-solid.svg" alt="" />
+            </button>
+            <button class="weight-plus">
+              <img src="./Fonts/plus-solid.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="age">
+          <h3 class="age-title">Age</h3>
+          <span class="age-counter">0</span>
+          <div class="age-cal">
+            <button class="age-minus">
+              <img src="./Fonts/minus-solid.svg" alt="" />
+            </button>
+            <button class="age-plus">
+              <img src="./Fonts/plus-solid.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <a href="./Result.html"> CALCULATE </a>
+    </footer>
+    <script src="./App.js"></script>
+  </body>
+</html>
