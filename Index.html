@@ -4,66 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icon link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
     <!-- style link  -->
     <link rel="stylesheet" href="./Style.css" />
-    <!-- font link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <title>BMI calculator App</title>
   </head>
   <body>
-    <nav class="nav-section"><a href="./Index.html">BMI Calculator App</a></nav>
-    <main>
+    <nav>
+      <a href="./Index.html" class="nav-link">BMI calculator App</a>
+    </nav>
+    <main class="index-main">
       <section class="container gen-section">
-        <button class="male">
-          <img src="./Fonts/Male.svg" alt="" /><span class="male-title">Male</span>
-        </button>
         <button class="female">
-          <img src="./Fonts/Female.svg" alt="" /><span class="female-title">Female</span>
+          <img src="./Images/Female.svg" alt="" />
+          <h3 class="female-title">Female</h3>
+        </button>
+        <button class="male">
+          <img class="male-img" src="./Images/Male.svg" alt="" />
+          <h3 class="male-title">Male</h3>
         </button>
       </section>
-      <section class="container height-section">
-        <span class="height-counter">0</span>
-        <input type="range" class="height-input" max="200" min="10" />
+      <section class="weight-section">
+        <h3 class="weight-title">Massa</h3>
+        <span class="weight-counter">50</span>
+        <input
+          id=""
+          name=""
+          min="10"
+          max="200"
+          value="50"
+          type="range"
+          class="weight-input"
+        />
       </section>
-      <section class="container weight-section">
-        <div class="weight">
-          <h3 class="weight-title">Weight</h3>
-          <span class="weight-counter">0</span>
-          <div class="weight-cal">
-            <button class="weight-minus">
-              <img src="./Fonts/minus-solid.svg" alt="" />
+      <section class="height-section">
+        <div class="height">
+          <h3 class="height-title">Height</h3>
+          <span class="height-counter">160</span>
+          <div class="height-cal">
+            <button class="height-minus">
+              <img src="./Images/minus-solid.svg" alt="" />
             </button>
-            <button class="weight-plus">
-              <img src="./Fonts/plus-solid.svg" alt="" />
+            <button class="height-plus">
+              <img src="./Images/plus-solid.svg" alt="" />
             </button>
           </div>
         </div>
         <div class="age">
           <h3 class="age-title">Age</h3>
-          <span class="age-counter">0</span>
+          <span class="age-counter">20</span>
           <div class="age-cal">
             <button class="age-minus">
-              <img src="./Fonts/minus-solid.svg" alt="" />
+              <img src="./Images/minus-solid.svg" alt="" />
             </button>
             <button class="age-plus">
-              <img src="./Fonts/plus-solid.svg" alt="" />
+              <img src="./Images/plus-solid.svg" alt="" />
             </button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer-section">
-      <a href="./Result.html"> CALCULATE </a>
+    <main class="result-main">
+      <h2 class="main-title">Your result:</h2>
+      <section class="result-section">
+        <h2 class="result-title"></h2>
+        <span class="result-counter"></span>
+        <h1 class="ads">
+          Powered by:
+          <a href="https://t.me/m1rzo_dev" class="ads-link">m1rzo_dev</a>
+        </h1>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#" class="footer-link" id="index-link"> Back</a>
+      <a href="#" class="footer-link" id="result-link"> Calculator</a>
     </footer>
     <script src="./App.js"></script>
   </body>
